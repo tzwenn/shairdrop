@@ -37,4 +37,6 @@ def registerAirDrop(cname, targetPort=65518, serviceName='d5924ed3d9b2'):
         sdRef.close()
 
 if __name__ == "__main__":
-    registerAirDrop(sys.argv[1] if len(sys.argv) > 1 else 'bera')
+    displayName = sys.argv[1] if len(sys.argv) > 1 else 'bera'
+    port = int(sys.argv[2]) if len(sys.argv) > 2 else 65518
+    registerAirDrop(displayName, port)

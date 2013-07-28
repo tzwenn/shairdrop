@@ -1,0 +1,11 @@
+Find all services:
+    $ dns-sd -B _services._dns-sd._udp local
+
+I can fake a target by copying it's Bonjour announce to another system and replay it there again.
+About Hash: remains static
+    Not H.: Content of cname
+    Not H.: Hostname
+    Not H.: Hardware Address (I guess)
+    Not H.: Name of Bonjour Service
+
+If length of cname is changed, bonjour registration will fail.

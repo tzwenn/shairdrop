@@ -1,0 +1,20 @@
+  fullname       = ed523675bba3._airdrop._tcp.local.
+  flags          = 0
+  hosttarget     = cura.local.
+  interfaceIndex = 3
+  txtRecord      = '"phash=pi0pk0wGRGiXcGWBVVZJVGUiw5U=\ncname=cura\x07flags=1'
+  port           = 64154
+
+  fullname       = f4f54ba7ee18._airdrop._tcp.local.
+  flags          = 0
+  hosttarget     = cura.local.
+  interfaceIndex = 4
+  txtRecord      = '\x07flags=1\ncname=cura"phash=pi0pk0wGRGiXcGWBVVZJVGUiw5U='
+  port           = 52752
+
+  fullname       = d5924dd3d8b1._airdrop._tcp.local.
+  flags          = 0
+  hosttarget     = reflektor.local.
+  interfaceIndex = 4
+  txtRecord      = '\x07flags=1"phash=fPy/DAcMib0CKkACSGUAANbNaa8="ehash=VfX1TwkwyzXneCgybPQGtm73IQc=\x0fcname=reflektor'
+  port           = 65517

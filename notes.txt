@@ -2,10 +2,15 @@ Find all services:
     $ dns-sd -B _services._dns-sd._udp local
 
 I can fake a target by copying it's Bonjour announce to another system and replay it there again.
-About Hash: remains static
-    Not H.: Content of cname
-    Not H.: Hostname
-    Not H.: Hardware Address (I guess)
-    Not H.: Name of Bonjour Service
+Works also if no ehash transmitted
 
-If length of cname is changed, bonjour registration will fail.
+Identity retrieved from phash. (image to known phashes).
+phash stands for "Picture Hash". Only announced if _booleanValueForPreference
+ehash stands for "Apple ID Email Hash". Associated with apple Id but not mandatory
+
+
+Bei BonjourPublisher::publishInternal auf rdi==rbx+0x28 liegt ein pointer zu CFNetServiceRef für AirDrop
+
+
+defaults write com.apple.NetworkBrowser DisableTLS 1
+

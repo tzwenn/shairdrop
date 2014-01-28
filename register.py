@@ -5,10 +5,7 @@ import pybonjour
 
 def register_callback(sdRef, flags, errorCode, name, regtype, domain):
     if errorCode == pybonjour.kDNSServiceErr_NoError:
-        print 'Registered service:'
-        print '  name    =', name
-        print '  regtype =', regtype
-        print '  domain  =', domain
+        sys.stderr.write('Registered service')
 
 def buildTxtRecord(dic):
    return "".join([chr(len(s)) + s for s in ("%s=%s" % e for e in dic.iteritems())])
